@@ -1,0 +1,15 @@
+
+kernel vec4 wrapTexture(sampler image, sampler wrapimage, float x_offset, float y_offset, float x_max, float y_max)
+{
+
+vec2 pos = samplerCoord(image);
+
+vec2 sz = samplerSize(image);
+
+vec2 newpos = pos+vec2(x_offset, y_offset);
+vec2 usepos = mod(newpos, vec2(x_max, y_max));
+
+return sample(image, usepos);
+
+}
+
