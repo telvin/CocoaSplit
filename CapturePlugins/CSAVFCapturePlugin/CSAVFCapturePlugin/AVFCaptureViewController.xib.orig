@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AVFCaptureViewController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCR-kd-C7T">
+                    <rect key="frame" x="50" y="100" width="100" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="AKw-oG-DGk"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="O6Y-5E-37d" id="CMY-Sm-H82">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="d6I-Q7-CW8">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="O6Y-5E-37d"/>
+                                <menuItem title="Item 2" id="CHi-gj-qVw"/>
+                                <menuItem title="Item 3" id="l5r-xx-2vg"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="4XC-d2-xv1" name="content" keyPath="arrangedObjects" id="EKt-Nr-NhI"/>
+                        <binding destination="4XC-d2-xv1" name="contentValues" keyPath="arrangedObjects.localizedName" previousBinding="EKt-Nr-NhI" id="iR2-tn-qYh"/>
+                        <binding destination="XW7-Yv-ARE" name="selectedObject" keyPath="selection.activeVideoFormat" previousBinding="iR2-tn-qYh" id="cgY-XF-7qW"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bO3-jY-iyA">
+                    <rect key="frame" x="50" y="71" width="100" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Dpa-Ka-GZm" id="3Mj-6M-upM">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="bua-L0-jWb">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="Dpa-Ka-GZm"/>
+                                <menuItem title="Item 2" id="cFs-9D-UjO"/>
+                                <menuItem title="Item 3" id="S3N-qw-ROF"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="hSE-Qd-8Bn" name="content" keyPath="arrangedObjects" id="Xtx-2N-tj0"/>
+                        <binding destination="hSE-Qd-8Bn" name="contentValues" keyPath="arrangedObjects.localizedName" previousBinding="Xtx-2N-tj0" id="GTe-Zf-vRG"/>
+                        <binding destination="XW7-Yv-ARE" name="selectedObject" keyPath="selection.activeVideoFramerate" previousBinding="GTe-Zf-vRG" id="N1N-aw-adC"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLg-5Q-iM4">
+                    <rect key="frame" x="-2" y="104" width="49" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Format" id="kMo-Vh-KmC">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkc-bT-MdR">
+                    <rect key="frame" x="-2" y="76" width="26" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="FPS" id="6Yo-ep-OFe">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqj-Yc-hls">
+                    <rect key="frame" x="-2" y="24" width="444" height="42"/>
+                    <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" id="NcP-Zi-55N">
+                        <font key="font" metaFont="smallSystem"/>
+                        <string key="title">Changing Format or FPS will apply those changes to ALL instances of this camera input, even if they are in the live view and you are changing it in preview. These are GLOBAL settings.</string>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0B-X8-VJI">
+                    <rect key="frame" x="0.0" y="2" width="124" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Frame Update Method" id="cfh-od-pLb">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dnN-lc-DLe">
+                    <rect key="frame" x="130" y="-3" width="138" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="oEv-3X-L9g" id="nKW-a6-1dm">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" id="kvP-w0-Mtf">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="oEv-3X-L9g"/>
+                                <menuItem title="Item 2" id="dJf-uT-gMk"/>
+                                <menuItem title="Item 3" id="Qj6-va-TPK"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="P5V-2Z-CDX" name="content" keyPath="arrangedObjects" id="wGj-TV-x7U"/>
+                        <binding destination="P5V-2Z-CDX" name="contentValues" keyPath="arrangedObjects.key" previousBinding="xdb-gy-GLN" id="HrV-UA-BoT"/>
+                        <binding destination="P5V-2Z-CDX" name="contentObjects" keyPath="arrangedObjects.value" previousBinding="wGj-TV-x7U" id="xdb-gy-GLN"/>
+                        <binding destination="XW7-Yv-ARE" name="selectedObject" keyPath="selection.self.renderType" previousBinding="HrV-UA-BoT" id="dOj-VQ-exZ"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bkc-bT-MdR" firstAttribute="centerY" secondItem="bO3-jY-iyA" secondAttribute="centerY" id="KAJ-0m-Ph0"/>
+                <constraint firstItem="KLg-5Q-iM4" firstAttribute="centerY" secondItem="nCR-kd-C7T" secondAttribute="centerY" id="hyh-bW-dMh"/>
+                <constraint firstItem="nCR-kd-C7T" firstAttribute="trailing" secondItem="bO3-jY-iyA" secondAttribute="trailing" id="nnQ-Fj-fMT"/>
+                <constraint firstItem="bO3-jY-iyA" firstAttribute="leading" secondItem="nCR-kd-C7T" secondAttribute="leading" id="wdd-9c-YBD"/>
+                <constraint firstItem="nCR-kd-C7T" firstAttribute="leading" secondItem="KLg-5Q-iM4" secondAttribute="trailing" constant="8" symbolic="YES" id="xbt-xL-x3w"/>
+            </constraints>
+            <point key="canvasLocation" x="489" y="317.5"/>
+        </customView>
+        <objectController id="XW7-Yv-ARE" userLabel="AVFCaptureController">
+            <connections>
+                <binding destination="-2" name="contentObject" keyPath="self.captureObj" id="JVR-eL-ncI"/>
+            </connections>
+        </objectController>
+        <arrayController id="4XC-d2-xv1" userLabel="videoFormatsArrayController">
+            <connections>
+                <binding destination="XW7-Yv-ARE" name="contentArray" keyPath="selection.videoFormats" id="haZ-Cs-6nc"/>
+            </connections>
+        </arrayController>
+        <arrayController id="hSE-Qd-8Bn" userLabel="videoFrameratesArrayController">
+            <connections>
+                <binding destination="XW7-Yv-ARE" name="contentArray" keyPath="selection.videoFramerates" id="E1H-vD-9YW"/>
+            </connections>
+        </arrayController>
+        <dictionaryController objectClassName="_NSControllerKeyValuePair" id="P5V-2Z-CDX" userLabel="renderStyleController">
+            <connections>
+                <binding destination="-2" name="contentDictionary" keyPath="self.renderStyleMap" id="uF9-5k-GM1"/>
+                <binding destination="-2" name="sortDescriptors" keyPath="self.styleSortDescriptors" id="pvr-Ck-cd5"/>
+            </connections>
+        </dictionaryController>
+    </objects>
+</document>
