@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A685DB1C98A3B800601B56 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A685DA1C98A3B800601B56 /* Syphon.framework */; };
 		34F7C5811B2C91FA00345230 /* CSDeckLinkCapture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34F7C5801B2C91FA00345230 /* CSDeckLinkCapture.mm */; };
 		34F7C5851B2C96B400345230 /* DeckLinkAPIDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34F7C5841B2C96B400345230 /* DeckLinkAPIDispatch.cpp */; };
 		34F7C5901B2C9BCB00345230 /* DeckLinkBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34F7C58F1B2C9BCB00345230 /* DeckLinkBridge.mm */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18A685DA1C98A3B800601B56 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CocoaSplit-fuybbhxwonvbkgcpgmyzroatrqvy/Build/Products/Debug/Syphon.framework"; sourceTree = "<group>"; };
 		34F7C5501B2C908700345230 /* CSDeckLinkCapturePlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSDeckLinkCapturePlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F7C5541B2C908700345230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34F7C5711B2C913500345230 /* CSPluginServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSPluginServices.h; path = PluginHeaders/CSPluginServices.h; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A685DB1C98A3B800601B56 /* Syphon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +74,7 @@
 		34F7C5471B2C908700345230 = {
 			isa = PBXGroup;
 			children = (
+				18A685DA1C98A3B800601B56 /* Syphon.framework */,
 				34F7C57E1B2C913500345230 /* PluginHeaders */,
 				34F7C5521B2C908700345230 /* CSDeckLinkCapturePlugin */,
 				34F7C5511B2C908700345230 /* Products */,

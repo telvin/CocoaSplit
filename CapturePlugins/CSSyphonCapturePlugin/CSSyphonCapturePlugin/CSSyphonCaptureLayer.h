@@ -7,8 +7,9 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import "SyphonBuildMacros.h"
+#import <SyphonBuildMacros.h>
 #import "Syphon.h"
+    //#import <Syphon.h>
 
 @interface CSSyphonCaptureLayer : CAOpenGLLayer
 {

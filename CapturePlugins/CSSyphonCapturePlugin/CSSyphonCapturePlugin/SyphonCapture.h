@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CSCaptureBase.h"
 #import "CSAbstractCaptureDevice.h"
+    //#import "SyphonBuildMacros.h"
 #import "SyphonBuildMacros.h"
 #import "Syphon.h"
 #import "CSIOSurfaceLayer.h"

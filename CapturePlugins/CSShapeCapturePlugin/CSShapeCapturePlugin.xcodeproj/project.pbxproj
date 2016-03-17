@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A685D91C98A3B000601B56 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A685D81C98A3B000601B56 /* Syphon.framework */; };
 		3436440B1B78F34F0069B8F2 /* CSShapePathLoader.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3436925D1B637DD2007EC2D9 /* CSShapePathLoader.py */; };
 		3436440C1B78F34F0069B8F2 /* CSShapePathWrapper.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34FD2ABF1B6D39DA00181409 /* CSShapePathWrapper.py */; };
 		343692431B6236DF007EC2D9 /* CSShapeCaptureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 343692421B6236DF007EC2D9 /* CSShapeCaptureFactory.m */; };
@@ -14,11 +15,11 @@
 		343692641B63891C007EC2D9 /* CSShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 343692631B63891C007EC2D9 /* CSShapeLayer.m */; };
 		34E3010A1B64A39E000C16DB /* CSShapeCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E301081B64A39E000C16DB /* CSShapeCaptureViewController.m */; };
 		34E3010B1B64A39E000C16DB /* CSShapeCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E301091B64A39E000C16DB /* CSShapeCaptureViewController.xib */; };
-		34E301141B6515C9000C16DB /* circle.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34E3010D1B6514F9000C16DB /* circle.py */; };
-		34E301151B6515C9000C16DB /* triangle.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34E3010F1B651515000C16DB /* triangle.py */; };
-		34E301161B6515CB000C16DB /* rtriangle.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34E301111B65153A000C16DB /* rtriangle.py */; };
+		34E301141B6515C9000C16DB /* circle.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34E3010D1B6514F9000C16DB /* circle.py */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		34E301151B6515C9000C16DB /* triangle.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34E3010F1B651515000C16DB /* triangle.py */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		34E301161B6515CB000C16DB /* rtriangle.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34E301111B65153A000C16DB /* rtriangle.py */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		34E56B0C1B6DF3D1006A621E /* CSShapeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E56B0B1B6DF3D1006A621E /* CSShapeWrapper.m */; };
-		34F2FF2B1B8AAAC1000B5964 /* arc.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34F2FF291B8AA717000B5964 /* arc.py */; };
+		34F2FF2B1B8AAAC1000B5964 /* arc.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34F2FF291B8AA717000B5964 /* arc.py */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18A685D81C98A3B000601B56 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CocoaSplit-fuybbhxwonvbkgcpgmyzroatrqvy/Build/Products/Debug/Syphon.framework"; sourceTree = "<group>"; };
 		343692111B62364E007EC2D9 /* CSShapeCapturePlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSShapeCapturePlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		343692151B62364E007EC2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		343692331B6236A4007EC2D9 /* CSPluginServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSPluginServices.h; path = PluginHeaders/CSPluginServices.h; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A685D91C98A3B000601B56 /* Syphon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +101,7 @@
 		343692081B62364E007EC2D9 = {
 			isa = PBXGroup;
 			children = (
+				18A685D81C98A3B000601B56 /* Syphon.framework */,
 				34E3010C1B6514DA000C16DB /* ShapePaths */,
 				343692401B6236A4007EC2D9 /* PluginHeaders */,
 				343692131B62364E007EC2D9 /* CSShapeCapturePlugin */,
@@ -217,6 +221,7 @@
 				TargetAttributes = {
 					343692101B62364E007EC2D9 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = LYCGTTPB5X;
 					};
 				};
 			};
@@ -281,6 +286,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Cu Le (LYCGTTPB5X)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -299,9 +305,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "-deep";
+				PROVISIONING_PROFILE = "5f602575-25d5-4515-8ba4-da734a0647a2";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -323,6 +331,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Cu Le (LYCGTTPB5X)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -335,8 +344,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "5f602575-25d5-4515-8ba4-da734a0647a2";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -344,6 +354,8 @@
 		343692191B62364E007EC2D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CSShapeCapturePlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -353,6 +365,7 @@
 					suppress,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -361,6 +374,8 @@
 		3436921A1B62364E007EC2D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CSShapeCapturePlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -370,6 +385,7 @@
 					suppress,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};

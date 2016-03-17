@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A685DD1C98A3DD00601B56 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A685DC1C98A3DD00601B56 /* Syphon.framework */; };
 		34AFC1A719B04DAE0007C07B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AFC1A619B04DAE0007C07B /* Cocoa.framework */; };
 		34AFC1B119B04DAE0007C07B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34AFC1AF19B04DAE0007C07B /* InfoPlist.strings */; };
 		34AFC1C719B04E2A0007C07B /* TextCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC1C319B04E2A0007C07B /* TextCapture.m */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18A685DC1C98A3DD00601B56 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CocoaSplit-fuybbhxwonvbkgcpgmyzroatrqvy/Build/Products/Debug/Syphon.framework"; sourceTree = "<group>"; };
 		344E1E761A7947DA0081E5E7 /* CSPluginServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSPluginServices.h; path = PluginHeaders/CSPluginServices.h; sourceTree = "<group>"; };
 		344E1E771A7947DA0081E5E7 /* CSIOSurfaceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSIOSurfaceLayer.h; path = PluginHeaders/CSIOSurfaceLayer.h; sourceTree = "<group>"; };
 		344E1E781A7947DA0081E5E7 /* CSPcmPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSPcmPlayer.h; path = PluginHeaders/CSPcmPlayer.h; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A685DD1C98A3DD00601B56 /* Syphon.framework in Frameworks */,
 				34AFC1A719B04DAE0007C07B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +111,7 @@
 		34AFC1A519B04DAE0007C07B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18A685DC1C98A3DD00601B56 /* Syphon.framework */,
 				34AFC1A619B04DAE0007C07B /* Cocoa.framework */,
 				34AFC1A819B04DAE0007C07B /* Other Frameworks */,
 			);
